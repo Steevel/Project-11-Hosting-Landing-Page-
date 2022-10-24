@@ -5,18 +5,14 @@
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-
-    /* border: 1px solid red !important; */
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #FDFEFF;
-
 }
 
 /* Nabar  */
-
 nav {
     display: flex;
     align-items: center;
@@ -64,7 +60,6 @@ nav {
 
 .hero-section-left {
     display: flex;
-    /* flex: 1; */
     flex-direction: column;
     justify-content: space-around;
     width: 55%;
@@ -104,8 +99,6 @@ nav {
     justify-content: center;
     margin: 40px 146px;
     height: 80vh;
-    /* border: 2px solid darkblue; */
-
 }
 
 .info-section-left {
@@ -157,9 +150,6 @@ nav {
 
 .support-section-left {
     width: 50%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
 }
 
 .support-heading {
@@ -196,7 +186,6 @@ nav {
     flex-direction: column;
     margin: 40px 146px;
     height: 100%;
-    /* border: 2px solid red; */
 }
 
 .services-section-top {
@@ -219,7 +208,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* border: 2px solid blueviolet; */
 
 }
 
@@ -227,7 +215,6 @@ nav {
     background-color: #FFFFFF;
     width: 30%;
     padding: 20px;
-    /* border: 2px solid black; */
     margin-bottom: 30px;
     border-radius: 12px;
 }
@@ -239,14 +226,8 @@ nav {
 
 .service-card h2 {
     margin-bottom: 10px;
-    /* border: 2px solid black; */
 
 }
-
-/* .service-card p {
-    margin-bottom: 8px;
-
-} */
 
 .pricing-section {
     background-image: linear-gradient(171deg, rgba(8, 172, 245, 1) 32%, rgba(5, 118, 237, 1) 100%);
@@ -264,7 +245,6 @@ nav {
     display: flex;
     justify-content: space-around;
     padding-bottom: 2rem;
-    /* margin: auto 100px; */
 }
 
 .pricing-card {
@@ -353,7 +333,6 @@ nav {
 }
 
 /* Testimonial section  */
-
 .testimonial-section {
     display: flex;
     flex-direction: column;
@@ -368,8 +347,6 @@ nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto 146px;
-    /* border: 2px solid red; */
-
 }
 
 .testimonial-card {
@@ -385,7 +362,6 @@ nav {
 }
 
 .testimonial-section-top {
-    /* border: 2px solid black; */
     margin: auto 146px;
     padding: 4em 14em;
 }
@@ -488,37 +464,140 @@ footer {
 }
 
 /* Media query for tablet devices  */
-@media (min-width: 427px) and (max-width: 768px) {
+@media (min-width: 427px) and (max-width: 1024px) {
+    nav {
+        justify-content: space-between;
+        margin: 2em 2em;
+    }
 
     .nav-elements {
         display: none;
     }
 
-    .hero-section {
-        display: flex;
-        flex-direction: column;
-        margin: 1em auto;
+    .nav-menu {
+        display: block;
+        width: 24px;
     }
 
-    .hero-section-left {
-        margin-right: 0;
+    .hero-section {
+        margin: 2em;
     }
 
     .hero-heading {
-        font-size: 2.6rem;
+        font-size: 2em;
     }
 
-    .hero-text {
-        word-spacing: 4px;
-        font-size: 1.2rem;
+    .hero-section-left {
+        padding-right: 1em;
     }
 
     .hero-button {
-        width: 50%;
+        width: 46%;
     }
 
-    .hero-section-right {
-        width: auto;
+    .hero-section-right img {
+        width: 100%;
+    }
+
+    /* Info section  */
+    .info-section {
+        height: 100%;
+        margin: 1em;
+    }
+
+    .info-heading {
+        font-size: 2em;
+    }
+
+    .info-section-right {
+        padding: 0;
+    }
+
+    .info-btn {
+        width: 46%;
+    }
+
+    /* Support section  */
+    .support-section {
+        margin: 2em;
+    }
+
+    /* Services section  */
+    .services-section {
+        margin: 2em;
+    }
+
+    .support-heading {
+        font-size: 2em;
+    }
+
+    .support-button {
+        width: 36%;
+    }
+
+    .services-text {
+        margin: 3rem;
+    }
+
+    .service-card {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    /* Pricing section */
+    .pricing-section {
+        padding: 0;
+    }
+
+    .pricing-table {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        row-gap: 2em;
+    }
+
+    .pricing-card {
+        width: 50%;
+        text-align: center;
+    }
+
+    .feature-list {
+        margin: 2rem;
+        padding-left: 5px;
+    }
+
+    .package-offering {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    /* Testimonial section */
+    .testimonial-section-top {
+        margin: 2em;
+        padding: 0;
+    }
+
+    .testimonial-heading {
+        font-size: 3rem;
+        margin-bottom: 0.5em;
+    }
+
+    .testimonial-section-bottom {
+        margin: 0;
+    }
+
+    /* Registration section  */
+    .registration-section {
+        padding: 2em;
+        align-items: center;
+    }
+
+    .registration-section-text {
+        width: 64%;
+    }
+
+    .registration-section button {
+        width: 30%;
     }
 
     /* Footer section  */
